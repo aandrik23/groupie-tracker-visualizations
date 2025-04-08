@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fromAlbumSlider.oninput = () => controlFromSlider(fromAlbumSlider, toAlbumSlider, fromAlbumInput);
   toAlbumSlider.oninput = () => controlToSlider(fromAlbumSlider, toAlbumSlider, toAlbumInput);
   fromAlbumInput.oninput = () => controlFromInput(fromAlbumSlider, fromAlbumInput, toAlbumInput, toAlbumSlider);
-  toAlbumInput.oninput = () => controlToInput(fromAlbumSlider, fromAlbumInput, toAlbumInput, toAlbumSlider);
+  toAlbumInput.oninput = () => controlToInput(toAlbumSlider, fromAlbumInput, toAlbumInput, toAlbumSlider);
 
   // Open the filter popup when the "Filter" button is clicked
   document.getElementById("openFilterBtn").addEventListener("click", () => {
